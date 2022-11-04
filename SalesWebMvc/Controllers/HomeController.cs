@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
+using SalesWebMvc.Models.ViewModels;
 
 namespace SalesWebMvc.Controllers
 {
@@ -19,7 +20,7 @@ namespace SalesWebMvc.Controllers
         {
             ViewData["Message"] = "Sales web MVC App from C# Course";
             ViewData["Usuário"] = "Bruno";
-            return PartialView();
+            return View();
         }
 
         public IActionResult Contact()
